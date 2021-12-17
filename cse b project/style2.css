@@ -1,0 +1,42 @@
+.parent{
+    display: flex;
+     flex-direction: row; 
+    width: 100%;
+     flex-wrap: wrap; 
+    justify-content: center; 
+}
+img{
+    width: 200px;
+    height:200px;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+.parent>div{
+    width: auto;
+    border: 2px solid skyblue;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+h2{
+    color:magenta;
+}
+button{
+    color: darkgreen;
+}
+header{
+    color:purple;
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+.card{
+    display: flex;
+    flex-direction: column;
+}  
+.card>div{
+    width: 60%;
+    border: 2px dotted yellow;
+}
+}

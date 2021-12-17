@@ -1,0 +1,41 @@
+.parent{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+     flex-wrap: wrap; 
+    justify-content: center; 
+}
+img{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.parent>div{
+    width: auto;
+    border: 2px solid blueviolet;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+h2{
+    color:magenta;
+}
+button{
+    color: darkgreen;
+}
+header{
+    color:purple;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+.parent{
+    display: flex;
+    flex-direction: column;
+}  
+.parent>div{
+    width: 80%;
+}
+}
